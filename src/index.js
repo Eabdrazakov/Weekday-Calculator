@@ -9,9 +9,9 @@ function reset() {
 
 function handleForm(e) {
     e.preventDefault();
-    const inputYear = document.getElementById("year").value;
-    const inputMonth = document.getElementById("month").value;
-    const inputDay = document.getElementById("day").value;
+    const inputYear = parseInt(document.getElementById("year").value);
+    const inputMonth = parseInt(document.getElementById("month").value);
+    const inputDay = parseInt(document.getElementById("day").value);
     const output = document.getElementById("output");
     if (inputYear && inputMonth && inputDay) {
         const calculateDay = new Calculator();
